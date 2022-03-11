@@ -54,7 +54,7 @@ class Cell {
 
 function createCellElements(gridElement){
     const cells = [];
-    for (let i = 0; i < GRID_SIZE; i++){
+    for (let i = 0; i < GRID_SIZE**2; i++){
         const cell = document.createElement("div");
         cell.classList.add("cell")
         cells.push(cell)
