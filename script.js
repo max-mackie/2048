@@ -19,6 +19,7 @@ async function handleInput(e){
         case "ArrowUp":
             if(!canMoveUp()){
                 setupInput()
+                return
             }
             await moveUp()
             console.log("await over")
@@ -26,6 +27,7 @@ async function handleInput(e){
         case "ArrowDown":
             if(!canMoveDown()){
                 setupInput()
+                return
             }
             await moveDown()
             console.log("await over")
@@ -33,6 +35,7 @@ async function handleInput(e){
         case "ArrowLeft":
             if(!canMoveLeft()){
                 setupInput()
+                return
             }
             await moveLeft()
             console.log("await over")
@@ -40,6 +43,7 @@ async function handleInput(e){
         case "ArrowRight":
             if(!canMoveRight()){
                 setupInput()
+                return
             }
             await moveRight()
             console.log("await over")
