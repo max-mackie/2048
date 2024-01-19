@@ -1,6 +1,7 @@
 const GRID_SIZE = 4;
-const CELL_SIZE = 20;
+const CELL_SIZE = 17;
 const CELL_GAP = 2;
+const Score = 12;
 
 
 export default class Grid {
